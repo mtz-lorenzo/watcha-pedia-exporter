@@ -162,7 +162,7 @@
     return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
   };
   const csv = [
-    'title,year,rating',
+    'title,year,rating10',
     ...rows.map((r) => [esc(r.title), esc(r.year), esc(r.rating)].join(',')),
   ].join('\r\n');
 
