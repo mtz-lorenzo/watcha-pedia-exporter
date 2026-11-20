@@ -82,6 +82,10 @@ watcha-pedia-exporter/
 - **Rate limits:** The public MyMemory translation fallback (Tier 4) is only triggered for the ~2–3% of obscure titles missed by Tiers 1–3, keeping daily request volume well within anonymous limits.
 - **Rating scale:** Watcha Pedia exports ratings on its native `0.5`–`5.0` scale (compatible directly with Letterboxd CSV imports).
 
+## Credits
+
+This project uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
