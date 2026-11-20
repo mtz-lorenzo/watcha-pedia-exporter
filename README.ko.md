@@ -4,8 +4,6 @@
 
 **왓챠피디아**(`pedia.watcha.com`)에 기록한 영화 별점을 깔끔한 CSV(`title,year,rating`)로 추출하고, 한국어 개봉명을 공식 영문 제목으로 자동 변환해 주는 도구입니다. **외부 Python 라이브러리 설치가 전혀 필요 없으며**, 특정 영화 제목을 하드코딩하지 않고 알고리즘으로 매칭합니다.
 
-![실행 화면](docs/03-terminal-output.png)
-
 ## 주요 기능
 
 - **브라우저 콘솔 원클릭 추출:** 왓챠피디아 내부 페이지네이션 API를 가로채어 별점을 매긴 영화(`title,year,rating`)만 정확히 `watcha_ratings.csv`로 다운로드합니다.
@@ -49,6 +47,8 @@
    ```bash
    python translate_titles.py
    ```
+
+![실행 화면](docs/03-terminal-output.png)
 
 `Downloads` 폴더에 있는 `watcha_ratings.csv`를 자동으로 불러와 프로젝트 폴더 내에 `watcha_ratings_english.csv` 파일을 생성합니다. 생성된 파일은 **Letterboxd**, **IMDb** 등에 바로 가져올 수 있습니다.
 

@@ -4,8 +4,6 @@
 
 Export your movie ratings from **Watcha Pedia** (`pedia.watcha.com`) to a clean CSV (`title,year,rating`) and automatically resolve Korean localized titles to their official English release titles—with **zero external Python dependencies** and **zero hardcoded movie dictionaries**.
 
-![Terminal Output](docs/03-terminal-output.png)
-
 ## Features
 
 - **One-click browser extraction.** Captures Watcha Pedia's internal pagination API directly from your browser session and downloads `watcha_ratings.csv` (`title,year,rating`), ignoring unrated items and recommendation clutter.
@@ -49,6 +47,8 @@ Requires **Python 3.10+** and a free **TMDB v3 API key** (available in your [TMD
    ```bash
    python translate_titles.py
    ```
+
+![Terminal Output](docs/03-terminal-output.png)
 
 It will automatically locate `watcha_ratings.csv` in your `Downloads` folder and generate `watcha_ratings_english.csv` in the project directory—ready to import into **Letterboxd**, **IMDb**, or any spreadsheet tool.
 
